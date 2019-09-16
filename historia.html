@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prefeitura Municipal de Raccoon City</title>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Raccoon City</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="somos.html">Quem Somos</a>
+                    </li>
+                    <li class="active">
+                        <a href="historia.html">História</a>
+                    </li>
+                    <li>
+                        <a href="atracoes.html">Atrações</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="navbar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                    </div>
+                </nav>
+                <h1>História</h1>
+                <h2>O crescimento com ajuda da Umbrella</h2>
+                <p>Nos anos 60, o engenheiro Michael Warren iniciou os trabalhos de eletrificação da cidade. Em 1968, ele auxiliou a produção de bondes elétricos na Europa,
+                que foram instalados em Raccoon City como principal meio de transporte da cidade. Após todos esses trabalhos, Warren ficou interessado na administração pública
+                e foi eleito como prefeito em 1987. Ele permaneceu no poder por 11 anos (até a destruição da cidade) e suas benfeitorias lhe renderam uma estátua em sua homenagem,
+                em 1992.</p>
+                <p>A chegada da Umbrella Corporation também se deu na década de 60, quando Ozwell E. Spencer contratou o arquiteto George Trevor para projetar uma mansão nas Montanhas
+                Arklay. A construção também abrigava um laboratório secreto, que foi concluído em 1967. A Umbrella foi fundada no ano seguinte, e fez o possível para ser
+                bem acolhida pelos habitantes de Raccoon City. O prefeito Michael Warren construiu uma relação estreita com a Umbrella, o que permitiu que a cidade recebesse muita ajuda
+                financeira durante sua administração como prefeito. Assistência social, serviços públicos, construção de instalações de saúde… a Umbrella financiou praticamente tudo na
+                cidade. Uma das obras de maior importância financiadas pela empresa foi a reforma do Hospital Geral de Raccoon City em 1992, que teve sua estrutura renovada e também
+                passou a abrigar instalações de pesquisa da Umbrella.</p>
+                <p>Até 1998, Raccoon City possuía uma população de 100 mil habitantes, sendo classificada como uma metrópole de médio porte. A cidadezinha de outrora se transformou na
+                metrópole com a chegada Umbrella Corporation, incentivando o desenvolvimento local. A empresa chegou à Raccoon City iniciando a construção de novas fábricas,
+                causando o rápido crescimento da cidade. Com o tempo, três de cada dez habitantes eram empregados da Umbrella Corporation.</p>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- jQuery 3.3.1 Slim-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+
+</html>
